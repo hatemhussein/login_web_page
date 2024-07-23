@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Start form styling */
+.containerLogin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.loginTitle {
+    display: block;
+    font-size: 3rem;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 30px;
+}
+/* End from form styling */
+
+/* start with inputs */
+.loginInput {
+    position: relative;
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+}
+.loginInput .inputLabel{
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 8px;
+}
+.loginInput input {
+    padding-left: 40px;
+    color: #adadad;
+    border: none;
+    border-bottom: 0.5px solid #adadad;
+    font-size: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    box-shadow: none;
+    transition: border-bottom 0.2s ease-in-out; /* Transition effect */
+}
+.loginInput input::placeholder {
+    color: #adadad; 
+    opacity: 1; 
+}
+.loginInput input:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #a64bf4;
+}
+.loginInput .icon {
+    position: absolute;
+    left: 12px;
+    top: 67%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #adadad;
+    font-weight: bold;
+}
+
+
+.loginInput input:focus + .icon i {
+    color: #a64bf4; 
+}
+
+/* end from inputs */
+
+/* start with forgot pass */
+.forgot{
+    width: 450px;
+    margin: auto;
+    text-align: end;
+}
+.forgot a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #666;
+}
+.forgot a:hover{
+    color: #a64bf4;
+}
+/* end from forgot pass */
+
+/* start with the button */
+.loginButton {
+    width: 450px;
+    margin: auto;
+}
+.loginButton button {
+    width: 100%;
+    padding: 10px 30px; 
+    color: white;
+    background: linear-gradient(45deg, #a64bf4, #8a2be2);
+    border: none; 
+    border-radius: 50px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(116, 37, 162, 0.841);
+}
+.loginButton button:hover {
+    background: linear-gradient(45deg, #ffffff, #d8b9ff);
+    color: #a64bf4;
+    border: 1px solid #a64bf4;
+    box-shadow: 0 6px 12px rgba(116, 37, 162, 0.841);
+    transform: translateY(-2px);
+}
+.loginButton button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(166, 75, 244, 0.3);
+}
+/* end from the button */
+
+/* start with the social media sign up section */
+.signupText{
+    color: #666;
+    width: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    text-decoration: none;
+    transition: .2s background-color;
+}
+.social .facebook{
+    background-color: #3b5998;
+}
+.social .twitter{
+    background-color: black;
+}
+.social .yahoo{
+    background-color: #8a2be2;
+}
+
+.social a:hover{
+    background-color: #333;
+}
+/* start with the social media sign up section */
+
+/* start with the sign up section */
+.signupSection{
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.signupSection a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+}
+.signupSection a:hover{
+    color: #a64bf4;
+}
+/* end from the sign up section */
+
+
+/* for validation aspects */
+#nameReqAlert, #passwordReqAlert, #passwordValidationAlert{
+    position: absolute;
+}
+
+
